@@ -1,0 +1,250 @@
+body {
+    background: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .phone {
+    height: 500px;
+    width: 250px;
+    background-image: url("https://i.pinimg.com/originals/69/08/e7/6908e7d309af549df1823471259a7a29.jpg");
+    background-size: cover;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(12, 12, 12), -3px -3px 10px rgb(12, 12, 12);
+    overflow: hidden;
+  }
+  
+  .info {
+    height: 500px;
+    width: 250px;
+    position: absolute;
+    top: 68px;
+    border-radius: 10px;
+  }
+  
+  .info-loc {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.49);
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .info-loc::first-letter {
+    text-transform: uppercase;
+  }
+  
+  .info-time {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.49);
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .info-weather-div {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    padding: 20px;
+    margin-top: -10px;
+    width: 130px !important;
+    max-height: 100px;
+    background: rgba(255, 255, 255, 0.46);
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+  }
+  
+  .weather-left {
+    margin-top: 80px;
+  }
+  
+  .weather-desc {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #3c3c3c;
+  }
+  
+  .weather-icon {
+    font-size: 70px;
+    color: #bef3ff;
+    margin-left: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .weather-temp {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #6a6a6a;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  
+  .other-desc {
+    background: rgba(236, 236, 236, 0.49);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    max-height: 190px;
+  }
+  
+  .other-desc > * {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5e5e5e;
+  }
+  
+  .max {
+    margin-left: 30px;
+  }
+  
+  .values {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+  }
+  
+  ::placeholder {
+    font-weight: normal;
+  }
+  
+  .searchBar {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 200px;
+    padding: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #4a70b1;
+  }
+  
+  .four-o-four {
+    position: relative;
+    top: 150px;
+    left: 70px;
+    font-family: arial;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.664);
+    width: 150px;
+    line-height: 2;
+    text-align-last: center;
+  }
+  
+  .four-o-four::after {
+    content: "OOPSIE";
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.418);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transition: 1s;
+    animation: oops 3s ease-in infinite;
+    font-size: 20px;
+  }
+  
+  .four-o-four::before {
+    content: "OOPSIE";
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.418);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    position: absolute;
+    top: -170px;
+    left: -180px;
+    transition: 1s;
+    animation: oops2 3s ease-in infinite;
+    font-size: 20px;
+  }
+  
+  @keyframes oops2 {
+    50% {
+      left: -100px;
+    }
+  
+    60% {
+      left: -70px;
+      transform: rotate(0deg);
+    }
+  
+    70% {
+      left: -60px;
+      transform: rotate(45deg);
+    }
+  
+    80% {
+      left: -50px;
+      transform: rotate(90deg);
+    }
+  
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  
+  @keyframes oops {
+    50% {
+      left: 100px;
+    }
+  
+    60% {
+      left: 70px;
+      transform: rotate(0deg);
+    }
+  
+    70% {
+      left: 60px;
+      transform: rotate(45deg);
+    }
+  
+    80% {
+      left: 50px;
+      transform: rotate(90deg);
+    }
+  
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  
+  /* afternoon: https://i.pinimg.com/originals/69/08/e7/6908e7d309af549df1823471259a7a29.jpg  
+  cover */
+  
+  /* snow: https://img.freepik.com/free-vector/illustration-silent-snowy-forest-with-mountain-ridge-sunset_251819-2010.jpg?size=626&ext=jpg&ga=GA1.1.423856379.1621934102
+    300px 500px*/
+  
+  /* night:  https://img.freepik.com/free-vector/set-night-sky-landscapes-city-mountains-forest-background-stars_198696-7.jpg?size=626&ext=jpg&ga=GA1.1.423856379.1621934102     
+   1000px 500px */
+  
